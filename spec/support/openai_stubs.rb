@@ -80,12 +80,12 @@ module OpenAIStubs
         completed_at: nil,
         last_error: nil,
         model: "gpt-3.5-turbo-1106",
-        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation.submit function with the key, translated string, and target language.",
+        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation_submit function with the key, translated string, and target language.",
         tools: [
           {
             type: "function",
             function: {
-              name: "translation.submit",
+              name: "translation_submit",
               description: "Submit a translation",
               parameters: {
                 type: "object",
@@ -140,12 +140,12 @@ module OpenAIStubs
         required_action: nil,
         last_error: nil,
         model: "gpt-3.5-turbo-1106",
-        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation.submit function with the key, translated string, and target language.",
+        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation_submit function with the key, translated string, and target language.",
         tools: [
           {
             type: "function",
             function: {
-              name: "translation.submit",
+              name: "translation_submit",
               description: "Submit a translation",
               parameters: {
                 type: "object",
@@ -184,7 +184,7 @@ module OpenAIStubs
         id: "call_#{k}",
         type: "function",
         function: {
-          name: "translation.submit",
+          name: "translation_submit",
           arguments: "{\"key\": \"#{k}\", \"translation\": \"#{v}\", \"language\": \"jp\"}"
         }
       }
@@ -215,12 +215,12 @@ module OpenAIStubs
         },
         last_error: nil,
         model: "gpt-3.5-turbo-1106",
-        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation.submit function with the key, translated string, and target language.",
+        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation_submit function with the key, translated string, and target language.",
         tools: [
           {
             type: "function",
             function: {
-              name: "translation.submit",
+              name: "translation_submit",
               description: "Submit a translation",
               parameters: {
                 type: "object",
@@ -283,12 +283,12 @@ module OpenAIStubs
         completed_at: nil,
         last_error: nil,
         model: "gpt-3.5-turbo-1106",
-        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation.submit function with the key, translated string, and target language.",
+        instructions: "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation_submit function with the key, translated string, and target language.",
         tools: [
           {
             type: "function",
             function: {
-              name: "translation.submit",
+              name: "translation_submit",
               description: "Submit a translation",
               parameters: {
                 type: "object",

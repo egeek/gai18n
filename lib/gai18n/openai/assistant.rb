@@ -5,7 +5,7 @@ module GAI18n
         def create
           description = ['This assisistant was created by GAI18n',
                         'to help with internationalization.'].join ' '
-          instructions = "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation.submit function with the key, translated string, and the target language. If you are asked to translate into multiple target languages, please call the translation.submit function for each target language."
+          instructions = "You are a software localization engineer. You have been tasked with translating the English source to the target language. You will be given a key and a source string. You will be asked to translate the source string to the target language. Once translated, please call the translation_submit function with the key, translated string, and the target language. If you are asked to translate into multiple target languages, please call the translation_submit function for each target language."
           openai_client = GAI18n.config.openai_client
           model = GAI18n.config.model
           parameters = {
@@ -17,7 +17,7 @@ module GAI18n
               {
                 type: "function",
                 function: {
-                  name: "translation.submit",
+                  name: "translation_submit",
                   description: "Submit a translation",
                   parameters: {
                     type: "object",
