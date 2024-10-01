@@ -1,6 +1,6 @@
 module GAI18n
   class Translation
-    def submit(key:, translation:, _language: nil)
+    def submit(key:, translation:, language: nil)
       arr = key.split('.') + [translation]
       result = arr.reverse.inject({}) do |hash, k|
         if k == translation
